@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(50, 0, 50), rgb(25, 0, 40), rgb(0, 10, 25));
+  background-size: cover;
+}
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.fortune-box {
+  background:linear-gradient(135deg, rgba(255, 105, 180, 0.7), rgba(148, 0, 211, 0.6), rgba(135, 206, 235, 0.7)), 
+  url('https://i.pinimg.com/originals/f6/37/22/f6372255977a5f65ae503c330c8e843f.gif');
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: rgb(26, 14, 14);
+  text-shadow: none;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  padding-top: 10px;
+  font-size: 1.2em;
+  background-color: #171329;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color:azure;
+}
+
+button:hover {
+  background-color: #433448;
+}
+
+.loading {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #0c0101; /* Matches button for flair */
+  text-shadow: none;
+}
+.result {
+  margin-top: 20px;
+  font-size: 1.5em;
+  max-width: 100%;
+  text-shadow: none;
+  color:black;
+}
