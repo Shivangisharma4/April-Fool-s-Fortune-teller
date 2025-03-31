@@ -73,3 +73,42 @@ button:hover {
   text-shadow: none;
   color:black;
 }
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  .fortune-box {
+    padding: 15px; /* Even less padding on small screens */
+    width: 95%; /* Closer to edges */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Smaller on mobile */
+  }
+
+  input {
+    padding: 6px; /* Tighter on mobile */
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 6px 12px; /* Tighter on mobile */
+    font-size: 0.9em;
+  }
+
+  .result {
+    font-size: 1em; /* Smaller text */
+    padding: 0 5px; /* Prevent overflow */
+  }
+
+  .loading {
+    font-size: 0.9em;
+  }
+}
+
+/* Ensure viewport scaling */
+@media (max-height: 500px) {
+  .fortune-box {
+    padding: 10px; /* Minimal padding for short screens */
+    max-height: 90vh; /* Limit height */
+    overflow-y: auto; /* Scroll if content overflows */
+  }
+}
